@@ -1,0 +1,24 @@
+.videoContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.video {
+  /* position: absolute; */
+  /* top: -10px; */
+  width:100.5vw;
+  /* height:100%; */
+  /* 使用波浪遮罩圖片 */
+  mask-image: url('/video/Exclude.png'); /* 替換為你的遮罩圖片路徑 */
+  -webkit-mask-image: url('/video/Exclude.png');
+  mask-size:cover; 
+  mask-repeat: no-repeat;
+}
+@media screen and (max-width: 375px) {
+  .video{
+    width: 100%; /* 改為 100% 確保填滿寬度 */
+    height: 500px; /* 改為 100% 確保填滿高度 */
+    object-fit: cover; 
+  }
+}

@@ -1,0 +1,33 @@
+.btn {
+  width: 280px;
+  height: 40px;
+  align-items: center;
+  border: 2px solid;
+  border-color: #000000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 10px 34px;
+  position: relative;
+}
+
+
+.btn1 .text-wrapper {
+  color: #000000;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+
+.btn.btn-1 .text-wrapper {
+  font-family: var(--primary-300-font-family);
+  font-size: var(--primary-300-font-size);
+  font-style: var(--primary-300-font-style);
+  font-weight: var(--primary-300-font-weight);
+  letter-spacing: var(--primary-300-letter-spacing);
+  line-height: var(--primary-300-line-height);
+}

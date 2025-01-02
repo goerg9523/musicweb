@@ -1,0 +1,45 @@
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.button {
+  padding: 10px 20px;
+  border: 1px solid #b4b4b4;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #000;
+  color: var(--basecolor);
+}
+
+.hiddenButton {
+  background-color: #ccc;
+  color: #666;
+}
+
+.showButton {
+  background-color: white;
+  color: #666;
+}
+
+/* 三種大小的按鈕樣式 */
+.small {
+  font-size: 12px;
+  padding: 5px 10px;
+  /* width: 100px; */
+}
+
+.medium {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.large {
+  font-size: 20px;
+  padding: 15px 30px;
+}

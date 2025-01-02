@@ -1,0 +1,120 @@
+/* 將頁面框架設為全高 */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+    background-image: url("/image/img-Jade/mem-bgImg.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+/* 固定 nav bar 在頂部 */
+.nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* 主內容區域 */
+.container {
+  flex: 1;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  overflow-y: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  /* margin-top: 90px; */
+  
+}
+
+/* 固定 footer 在底部 */
+.footer {
+  height: 120px;
+  background: linear-gradient(180deg, #fff 65%, #84ff79 90%, #14ff00);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* 左邊內容區域 */
+.leftContent {
+  flex: 2;
+  padding: 20px;
+  position: fixed; /* 固定位置 */
+  top: 50%; /* 垂直置中 */
+  transform: translateY(-50%); /* 垂直方向居中對齊 */
+  z-index: 5; /* 保持層級低於 nav 和 footer */
+
+/* 霧面玻璃效果 */
+background: rgba(255, 255, 255, 0.15); /* 更低透明度的白色背景 */
+backdrop-filter: blur(15px) brightness(0.9); /* 增加模糊和略微降低亮度 */
+border-radius: 10px; /* 可選，圓角 */
+border: 1px solid rgba(255, 255, 255, 0.25); /* 可選，淡邊框增加玻璃感 */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 可選，陰影效果讓玻璃更立體 */
+}
+
+
+/* 右邊內容區域 */
+.rightContent {
+  overflow-y: auto;
+
+  height: 500px;
+  width: 70%; /* 右側占 container 的 80% */
+  /* background-color: #e0e0e0; */
+  /* padding: 20px; */
+  margin-left: 25%; /* 留出左側固定區域的空間 */
+
+
+  
+}
+
+
+/* 11.03 新增 */
+/* 當螢幕寬度小於 400px 時隱藏 nav 並顯示 menu-button */
+@media (max-width: 400px) {
+  .nav {
+    display: none; /* 隱藏 nav */
+  }
+
+  .leftContent {
+    display: none; /* 隱藏左側內容 */
+  }
+
+  .container {
+    height: auto; /* 自動擴展高度 */
+    overflow-y: visible; /* 取消滾動條 */
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .rightContent {
+    width: 100%; /* 讓右側內容佔滿寬度 */
+    margin: 0;
+  }
+
+  .footer {
+    position: relative; /* 取消固定底部 */
+  }
+
+  .wrapper {
+    overflow: visible; /* 確保小螢幕上內容不被隱藏 */
+  }
+}

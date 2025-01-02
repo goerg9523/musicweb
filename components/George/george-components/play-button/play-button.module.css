@@ -1,0 +1,93 @@
+/* 基本按鈕樣式 */
+.button {
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+  
+}
+
+/* 三種不同尺寸 */
+.small {
+  width: 24px;
+  height: 24px;
+}
+
+.medium {
+  width: 60px;
+  height: 60px;
+}
+
+.large {
+  width: 80px;
+  height: 80px;
+}
+
+/* 播放圖示樣式 (白色三角形) */
+.playIcon {
+  width: 0;
+  height: 0;
+  position: absolute; 
+  left: 35%; 
+  
+}
+
+.small .playIcon {
+  border-left: 10px solid white;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+.medium .playIcon {
+  border-left: 20px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.large .playIcon {
+  border-left: 30px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+/* 暫停圖示樣式 (兩條白色垂直線) */
+.pauseIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 使垂直方向居中 */
+}
+
+.small .pauseIcon {
+  width: 10px; /* 控制 pauseIcon 容器的寬度 */
+}
+
+.medium .pauseIcon {
+  width: 18px;
+}
+
+.large .pauseIcon {
+  width: 30px;
+}
+
+.pauseIcon span {
+  background-color: white;
+}
+
+.small .pauseIcon span {
+  width: 3px;
+  height: 14px;
+}
+
+.medium .pauseIcon span {
+  width: 6px;
+  height: 30px;
+}
+
+.large .pauseIcon span {
+  width: 8px;
+  height: 40px;
+}

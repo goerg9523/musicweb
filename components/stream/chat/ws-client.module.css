@@ -1,0 +1,271 @@
+/* Desktop Styles - Original Design */
+.container {
+  width: 300px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.loginContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  padding: 10px;
+}
+
+.messageArea {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  border: 1px solid #000000;
+  scroll-behavior: smooth;
+}
+
+/* Dark mode styles for message area */
+:global([data-theme="dark"]) .messageArea {
+  background-color: #1a1a1a;
+  border-color: #333;
+  transition: all 1.8s ease;
+}
+
+.messageRow {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.username {
+  font-size: 12px;
+  color: #666;
+  word-break: break-all;
+}
+
+/* Dark mode styles for username */
+:global([data-theme="dark"]) .username {
+  color: #999;
+  transition: all 1.8s ease;
+}
+
+.message {
+  background-color: #f0f0f0;
+  padding: 8px 12px;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+/* Dark mode styles for message */
+:global([data-theme="dark"]) .message {
+  background-color: #2a2a2a;
+  color: #fff;
+  transition: all 1.8s ease;
+}
+
+.systemMessage {
+  background-color: #e8f4f8;
+  padding: 8px 12px;
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+/* Dark mode styles for system message */
+:global([data-theme="dark"]) .systemMessage {
+  background-color: #263238;
+  color: #b0bec5;
+  transition: all 1.8s ease;
+}
+
+.inputContainer {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* Dark mode styles for input container */
+:global([data-theme="dark"]) .inputContainer {
+  background-color: #1a1a1a;
+  transition: all 1.8s ease;
+}
+
+.input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #000000;
+  margin-right: 8px;
+}
+
+/* Dark mode styles for input */
+:global([data-theme="dark"]) .input {
+  background-color: #2a2a2a;
+  border-color: #333;
+  color: #fff;
+  transition: all 1.8s ease;
+}
+
+.sendButton {
+  padding: 8px 16px;
+  background-color: rgba(20, 255, 0, 1);
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.loginInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Dark mode styles for login input */
+:global([data-theme="dark"]) .loginInput {
+  background-color: #2a2a2a;
+  border-color: #333;
+  color: #fff;
+  transition: all 1.8s ease;
+}
+
+.loginButton {
+  padding: 8px;
+  background-color: rgba(20, 255, 0, 1);
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Previous styles remain the same until mobile styles */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    z-index: 1000;
+    background: white;
+    transition: transform 0.3s ease;
+  }
+
+  /* Dark mode styles for mobile container */
+  :global([data-theme="dark"]) .container {
+    background: #1a1a1a;
+    transition: all 1.8s ease;
+  }
+
+  .containerCollapsed {
+    transform: translateY(calc(100% - 40px));
+  }
+
+  .chatToggle {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background: white;
+    border-top: 1px solid #e0e0e0;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /* Dark mode styles for chat toggle */
+  :global([data-theme="dark"]) .chatToggle {
+    background: #1a1a1a;
+    border-top-color: #333;
+    color: #fff;
+    transition: all 1.8s ease;
+  }
+
+  .chatToggleTitle {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .messageArea {
+    height: calc(60vh - 100px);
+  }
+
+  .chatContainer {
+    height: 60vh;
+  }
+
+  .toggleIcon {
+    transition: transform 0.3s ease;
+  }
+
+  .toggleIconOpen {
+    transform: rotate(180deg);
+  }
+
+  .messageCounter {
+    background: #cc0000;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+
+  /* Mobile-specific login container styles */
+  .loginContainer {
+    height: 60vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    gap: 15px;
+  }
+
+  /* Dark mode styles for mobile login container */
+  :global([data-theme="dark"]) .loginContainer {
+    background: #1a1a1a;
+    transition: all 1.8s ease;
+  }
+
+  .loginInput {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 0;
+  }
+
+  .loginButton {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  }
+}

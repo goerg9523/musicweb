@@ -1,0 +1,29 @@
+/* 基本樣式，繪製方框 */
+.checkbox {
+  width: 30px;
+  height: 30px;
+  border: 4px solid black;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  
+}
+
+
+/* 選中狀態樣式 */
+.checked {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 勾選標誌 */
+.checked:before {
+  content: "";
+  width: 7px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}

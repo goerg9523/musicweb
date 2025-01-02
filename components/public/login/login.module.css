@@ -1,0 +1,189 @@
+/* Login.module.css */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("/image/img-mem/bg001.jpg"); /* 替換為您的背景圖片 */
+  background-size: cover;
+  background-position: center;
+}
+
+.loginBox {
+  background: rgba(178, 201, 196, 0.8);
+  /* background-color:  rgba(21, 255, 0, 0.721); */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  /* border: 2px solid #333; */
+ 
+}
+
+.welcomeText {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.inputField {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+}
+
+.errorText{
+  color: red;
+  font-size: 0.9em;
+}
+
+.loginButton {
+  width: 90%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.loginButton:hover {
+  background-color: var(--basecolor);
+  color: black;
+}
+
+.links {
+  margin-top: 15px;
+}
+
+.forgotPassword,
+.createAccount {
+  display: block;
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.quickLoginButton {
+  width: 90%;
+  padding: 10px;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+.quickLoginButton:hover{
+  width: 90%;
+  padding: 10px;
+  background-color: #333;
+  color: var(--basecolor);
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  
+}
+
+.forgotPassword:hover,
+.createAccount:hover {
+  text-decoration: underline;
+}
+
+.successOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* 保證提示框在最上層 */
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* 縮小 */
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1); /* 略微放大 */
+  }
+  100% {
+    transform: scale(1); /* 回到正常大小 */
+  }
+}
+
+.successMessage {
+  background: #000;
+  color: var(--basecolor);
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeInScale 0.6s ease; /* 添加動畫 */
+}
+
+
+
+@media screen and (max-width: 375px) {
+  .loginBox{
+    width: 80%;
+  }
+  .loginButton{
+    padding: 10px;
+    width: 90%;
+margin:auto;
+margin-top: 10px;
+  }
+
+  
+}
+

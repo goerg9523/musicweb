@@ -1,0 +1,72 @@
+.btn {
+  width: 280px;
+  height: 40px;
+  background-color: #000000;
+  color: #14ff00;
+  align-items: center;
+  border: 2px solid;
+  border-color: #000000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 10px 34px;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  
+}
+
+.btn:hover {
+  background-color: rgba(255, 225, 0, 1); 
+  transform: scale(1.05); 
+  color: black;
+}
+
+.btn2 .text-wrapper {
+  color: #14ff00;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.btn.btn-2 .text-wrapper {
+  font-family: var(--primary-300-font-family);
+  font-size: var(--primary-300-font-size);
+  font-style: var(--primary-300-font-style);
+  font-weight: var(--primary-300-font-weight);
+  letter-spacing: var(--primary-300-letter-spacing);
+  line-height: var(--primary-300-line-height);
+}
+@media(max-width: 375px){
+  .btn {
+    width: 140px;
+    height: 40px;
+    background-color: #000000;
+    color: #14ff00;
+    align-items: center;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px 34px;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .btn:hover {
+    
+  }
+  .btn.btn-2 .text-wrapper {
+    font-family: var(--primary-300-font-family);
+    font-size: 16px;
+    font-style: var(--primary-300-font-style);
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: var(--primary-300-line-height);
+  }
+}

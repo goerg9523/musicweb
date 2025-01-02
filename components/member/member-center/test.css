@@ -1,0 +1,19 @@
+/* 左邊內容區域 */
+.leftContent {
+  flex: 2;
+  background-color: #f0f0f0;
+  padding: 20px;
+  position: fixed; /* 固定位置 */
+  top: 100px; /* 與 container 的 padding-top 保持一致 */
+  left: 10%; /* 根據需要調整，以對齊 container */
+  z-index: 5;
+}
+
+/* 右邊內容區域 */
+.rightContent {
+  width: 80%; /* 右側占 container 的 80% */
+  background-color: #e0e0e0;
+  padding: 20px;
+  margin-left: 20%; /* 留出左側固定區域的空間 */
+  padding-top: 100px; /* 與左側區塊的 top 對齊 */
+}

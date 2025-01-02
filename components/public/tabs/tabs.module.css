@@ -1,0 +1,45 @@
+.category {
+  align-items: center;
+  border: 1px solid var(--black);
+  display: flex;
+  gap: 10px;
+  height: 80px;
+  justify-content: center;
+  padding: 20px 10px;
+  position: relative;
+  width: 100px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.text-wrapper {
+  color: var(--black);
+  font-family: var(--primary-400-font-family);
+  font-size: var(--primary-400-font-size);
+  font-style: var(--primary-400-font-style);
+  font-weight: var(--primary-400-font-weight);
+  letter-spacing: var(--primary-400-letter-spacing);
+  line-height: var(--primary-400-line-height);
+  position: relative;
+  width: fit-content;
+  transition: color 0.3s ease;
+}
+
+.hover {
+  background-color: var(--basecolor);
+}
+
+.default {
+  background-color: var(--white);
+}
+
+/* Optional: Add focus state for accessibility */
+.category:focus {
+  outline: 2px solid var(--basecolor);
+  outline-offset: -2px;
+}
+
+/* Optional: Add active state for click feedback */
+.category:active {
+  transform: scale(0.98);
+}

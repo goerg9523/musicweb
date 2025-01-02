@@ -1,0 +1,80 @@
+/* Carousel 容器樣式 */
+.carousel-container {
+  position: relative;
+  width: 80vw;
+  height: 80%;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  overflow: hidden;
+  
+}
+.latestLaunch {
+  display: flex;
+  align-items: center;
+  line-height: 70px;
+}
+
+/* items  */
+.carouselItem {
+  width: 200px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 30em;
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+.carouselItem:hover {
+  transform: scale(1.05);
+}
+.carouselImage {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 300px;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease;
+}
+
+.headline {
+  position: absolute;
+  color: white;
+  font-size: 2.5em;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+  left: 0;
+  bottom: 30px;
+}
+.singer{
+  position: absolute;
+  color: white;
+  font-size: 1.5em;
+  text-align: end;
+  margin: 0;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+}
+
+@media (max-width: 375px) {
+  .carouselItem {
+    width: 225px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 30em;
+    margin: auto;
+    transition: transform 0.3s ease;
+  }
+}

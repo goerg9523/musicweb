@@ -1,0 +1,73 @@
+/* hearts.module.css */
+.heart {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #414346;
+  transition: transform 0.2s ease;
+}
+
+/* Default state sizes */
+.heart1-default {
+  width: 20px;
+  height: 18px;
+}
+
+.heart2-default {
+  width: 25px;
+  height: 22px;
+}
+
+.heart3-default {
+  width: 30px;
+  height: 26px;
+}
+
+/* Active state sizes */
+.heart1-active {
+  width: 20px;
+  height: 18px;
+  color: #ff0000;
+}
+
+.heart2-active {
+  width: 25px;
+  height: 22px;
+  color: #ff0000;
+}
+
+.heart3-active {
+  width: 30px;
+  height: 26px;
+  color: #ff0000;
+}
+
+/* Hover effects */
+.heart:hover {
+  transform: scale(1.1);
+}
+
+/* Optional: Add animation for state changes */
+.heart.active {
+  animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Container styles if needed */
+.heartContainer {
+  display: inline-flex;
+  padding: 8px;
+}

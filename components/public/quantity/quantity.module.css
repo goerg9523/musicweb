@@ -1,0 +1,59 @@
+.quantity {
+  align-items: center;
+  display: inline-flex;
+  gap: 3px;
+  justify-content: center;
+  position: relative;
+}
+
+.quantity .QUTANTITY {
+  align-items: center;
+  background-color: #ffffff;
+  border: 0.5px solid;
+  border-color: #dddddd;
+  display: flex;
+  gap: 10px;
+  height: 1.5em;
+  width: 2em;
+  justify-content: center;
+  padding: 5px 0px;
+  position: relative;
+}
+
+.quantity .text-wrapper {
+  color: #000000;
+  font-family: "Nunito Sans-ExtraLight", Helvetica;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: -4px;
+  margin-top: -5px;
+  position: relative;
+  width: fit-content;
+}
+
+.quantity .div-wrapper {
+  background-color: #ffffff;
+  border: 0.5px solid;
+  border-color: #dddddd;
+  height: 1.5em;
+  width: 1.5em;
+  position: relative;
+  padding: 5px 5px;
+  line-height: 1.5em;
+  cursor: pointer;  /* 添加手型光標，表示可點擊 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity .div {
+  color: #000000;
+  font-weight: bold;
+}
+
+.quantity .text-wrapper-2 {
+  color: #000000;
+  font-weight: bold;
+}

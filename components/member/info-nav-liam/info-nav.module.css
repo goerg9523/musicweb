@@ -1,0 +1,53 @@
+.info-nav {
+  padding: 0 20px;
+  margin: 0 20px;
+  /* background-color: var(--gray-2); */
+  border-radius: 8px;
+  flex: 2;
+  height: 80%;
+}
+
+.nav-title {
+  font-weight: bold;
+  margin-bottom: 100px;
+  cursor: pointer;
+  text-align: center;
+}
+.nav-title:hover {
+  /* font-size: 26px; */
+  color: gray;
+
+
+}
+
+.nav-body {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.body-text {
+  /* font-size: 16px; */
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease; /* 添加背景色過渡效果 */
+  border-right: 3px solid transparent; /* 設置透明邊框 */
+  border-left: 3px solid transparent; /* 設置透明邊框 */
+}
+.body-text:hover {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: gray;
+}
+
+@media (max-width: 500px) {
+  .info-nav {
+    display: none; /* 隱藏整個 .info-nav 區塊 */
+  }
+}

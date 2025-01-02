@@ -1,0 +1,214 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/image/img-mem/bg001.jpg"); /* 替換為您的背景圖片 */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background: rgba(178, 201, 196, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  /* border: 1px solid #333; */
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  /* margin-bottom: 15px; */
+  padding: 10px 15px;
+  position: relative;
+  margin: 10px;
+  /* margin-bottom: 1rem; */
+}
+
+
+
+.error {
+  color: red;
+  
+  /* background-color: black; */
+  width: 50%;
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-left: 15%;
+text-align: left;
+/* align-items: center; */
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+  margin: 0 10px;
+}
+
+.input::placeholder {
+  color: #333; /* 設置 placeholder 的顏色為灰色 */
+  opacity: 1; /* 確保顏色不會被透明度影響 */
+}
+
+.selectPlaceholder {
+  color: #333; /* 設置選擇框的提示字顏色為灰色 */
+}
+
+
+.button {
+  width: 90%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 10px;}
+
+.button:hover {
+  background-color: var(--basecolor);
+  color: black;
+}
+
+.message {
+  margin-top: 15px;
+  color: red;
+  font-size: 0.9em;
+}
+
+.loginText {
+  color: #555; 
+  cursor: pointer;
+}
+
+.loginText:hover {
+  text-decoration: underline;
+}
+
+/* 成功提示框 */
+
+.successOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* 保證提示框在最上層 */
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* 縮小 */
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1); /* 略微放大 */
+  }
+  100% {
+    transform: scale(1); /* 回到正常大小 */
+  }
+}
+
+.successMessage {
+  background: #000;
+  color: var(--basecolor);
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeInScale 0.6s ease; /* 添加動畫 */
+}
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+
+  .background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+    background-image: url("/image/img-mem/bg001.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow-y: auto; /* 使背景支援滾動 */
+  }
+
+  .container {
+
+    width: 80%;
+    
+  }
+
+  .logo {
+    display: none;
+  }
+  
+  .error {
+    color: red;
+    
+    /* background-color: black; */
+    width: 70%;
+    font-size: 0.9rem;
+    margin-top: 0;
+    margin-left: 15%;
+  text-align: left;
+  /* align-items: center; */
+  }
+  .button{
+    padding: 10px;
+    width: 90%;
+margin:auto;
+margin-top: 10px;
+  }
+}

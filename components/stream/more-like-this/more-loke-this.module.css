@@ -1,0 +1,85 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.spacedContainer {
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Dark mode for title */
+:global([data-theme="dark"]) .title {
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.imageContainer {
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.overlay {
+  position: relative;
+  inset: 0;
+  transition: opacity 200ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.overlayText {
+  margin-top: 1%;
+  color: rgb(70, 70, 70);
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Dark mode for overlay text */
+:global([data-theme="dark"]) .overlayText {
+  color: rgb(200, 200, 200);
+}
+
+.loading {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(156, 163, 175);
+}
+
+/* Dark mode for loading text */
+:global([data-theme="dark"]) .loading {
+  color: rgb(156, 163, 175);
+}

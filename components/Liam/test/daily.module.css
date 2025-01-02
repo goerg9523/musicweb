@@ -1,0 +1,365 @@
+.player {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 載入和錯誤狀態 */
+.loadingState,
+.errorState {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #666;
+}
+
+.errorState {
+  color: #dc3545;
+}
+
+/* 當前播放區域 */
+.nowPlaying {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.currentImage {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.currentInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.titleRow h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.genre {
+  padding: 4px 12px;
+  background: #e9ecef;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #666;
+}
+
+.artistName {
+  margin: 0 0 24px 0;
+  color: #666;
+  font-size: 16px;
+}
+
+/* 控制區域 */
+.controls {
+  margin-top: auto;
+}
+
+.progressBar {
+  width: 100%;
+  height: 4px;
+  background: #dee2e6;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.progressFill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #339af0;
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+.timeAndVolume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.time {
+  font-size: 14px;
+  color: #666;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  width: 140px;
+}
+
+.volumeSlider {
+  flex: 1;
+  height: 4px;
+  -webkit-appearance: none;
+  background: #dee2e6;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #00ff0d;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.volumeSlider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.playButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.controlBtn {
+  background: none;
+  border: none;
+  padding: 8px;
+  color: #666;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.controlBtn:hover {
+  background: #e9ecef;
+  color: #09ff00;
+}
+
+.playBtn {
+  background: #000000;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.playBtn:hover {
+  background: #2bff00;
+  transform: scale(1.05);
+}
+
+/* 推薦列表 */
+.recommendList {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.listHeader {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.listHeader h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.list {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+  overflow-x: auto;
+}
+
+.list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: #f1f3f5;
+  border-radius: 3px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #ced4da;
+  border-radius: 3px;
+}
+
+.recommendItem {
+  flex: 0 0 auto;
+  width: 120px;
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.recommendItem:hover {
+  background: #f1f3f5;
+}
+
+.recommendItem.active {
+  background: #e7f5ff;
+}
+
+.albumCover {
+  width: 100%;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.date {
+  font-size: 14px;
+  color: #495057;
+  font-weight: 500;
+}
+
+.name {
+  font-size: 12px;
+  color: #868e96;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .player {
+    padding: 12px;
+  }
+
+  .nowPlaying {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .currentImage {
+    width: 160px;
+    height: 160px;
+  }
+
+  .timeAndVolume {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .volume {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .currentImage {
+    width: 140px;
+    height: 140px;
+  }
+
+  .titleRow h2 {
+    font-size: 20px;
+  }
+
+  .playButtons {
+    gap: 12px;
+  }
+
+  .recommendItem {
+    width: 100px;
+  }
+
+  .albumCover {
+    height: 100px;
+  }
+}
+
+/* 動畫效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nowPlaying {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* 互動狀態 */
+.progressBar:hover .progressFill {
+  background: #00ff2a;
+}
+
+.controlBtn:active,
+.playBtn:active {
+  transform: scale(0.95);
+}
+
+/* 焦點狀態 */
+.volumeSlider:focus,
+.controlBtn:focus,
+.playBtn:focus,
+.recommendItem:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(51, 154, 240, 0.2);
+}
+
+/* 無障礙支持 */
+@media (prefers-reduced-motion: reduce) {
+  .nowPlaying,
+  .controlBtn,
+  .playBtn,
+  .volumeSlider::-webkit-slider-thumb {
+    animation: none;
+    transition: none;
+  }
+}

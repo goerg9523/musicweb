@@ -1,0 +1,88 @@
+.containDescription{
+  width: 80vw;
+  height: 700px;
+  margin: auto;
+  display: flex;
+}
+.imgBox{
+  width: 800px;
+  height: 300px;
+}
+
+.topImageBox{
+  width: 800px;
+  height: 300px;
+}
+.topImage{
+  width: 800px;
+  height: 300px;
+  object-fit: cover;
+}
+.bottomImagesBox img:nth-child(2){
+  margin-left: 20px;
+}
+.bottomImages{
+  margin-top: 10px;
+  width: 390px;
+  height: 390px;
+  object-fit: cover;
+}
+.desBox{
+  margin-top: 15px;
+  margin-left: 50px;
+}
+.desBox p{
+  margin: 20px 20px;
+  font-size: 18px;
+}
+
+
+
+@media(max-width: 375px){
+  .containDescription{
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 710px;
+  }
+  .topImageBox{
+    width: 360px;
+    height: 200px;
+    margin: 0;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+  .topImage{
+    width: 100%;
+    height: 100%;
+  }
+  .bottomImagesBox{
+    width: 360px;
+    height: 200px;
+    margin: 0;
+    object-fit: cover;
+  }
+  .bottomImages{
+    width: 360px;
+    height: 390px;
+    margin: 10px 0px 0px 0px;
+  }
+  .bottomImagesBox img:nth-child(2){
+    margin-left: 0;
+  }
+  .bottomImagesBox img{
+    object-fit: cover;
+  }
+  .desBox{
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 10;
+    text-overflow: ellipsis;
+  }
+  .desBox p{
+    font-size: 18px;
+  }
+}

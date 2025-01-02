@@ -1,0 +1,139 @@
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vcover{
+  position: absolute;
+  top: 0px;
+  height: 30px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1), /* 漸層顏色的起點（接近導航欄顏色） */
+    rgba(255, 255, 255, 0.8), /* 漸層顏色的起點（接近導航欄顏色） */
+    rgba(255, 255, 255, 0.6), /* 漸層顏色的起點（接近導航欄顏色） */
+    rgba(255, 255, 255, 0.4), /* 漸層顏色的起點（接近導航欄顏色） */
+    rgba(255, 255, 255, 0.2), /* 漸層顏色的起點（接近導航欄顏色） */
+    rgba(0, 0, 0, 0) /* 透明，和影片自然過渡 */
+  );
+  filter: blur(0px);
+  z-index: 500;
+}
+
+.banner video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  
+}
+.container {
+  width: 80vw;
+  margin: auto;
+  padding: 100px ;
+  z-index: 9999;
+}
+
+.ordercompletedbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+.orderbox{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+}
+.completedicon {
+  border: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(20, 255, 0, 1), rgb(30, 236, 11),rgb(34, 163, 22));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.completedicon::after {
+  content: "✔";
+  font-size: 60px;
+  color: black;
+}
+.ordercompleted {
+  font-size: 48px;
+  font-weight: bold;
+  animation: fadeIn 1s ease-out;
+}
+.ordernumbers {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+.btnscontroller{
+  margin: 70px auto 30px;
+  display: flex;
+  gap: 20px;
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 375px){
+  .container {
+    width: 95vw;
+    margin: auto;
+    padding: 20px;
+  }
+  .ordercompletedbox {
+    width: 100%;
+    padding: 10px;
+  }
+  .completedicon {
+    width: 60px;
+    height: 60px;
+  }
+  .completedicon::after {
+    font-size: 36px;
+  }
+  .ordercompleted {
+    font-size: 28px;
+  }
+  .ordernumbers {
+    font-size: 14px;
+  }
+  .btnscontroller {
+    margin: 30px auto 10px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

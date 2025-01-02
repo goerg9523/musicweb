@@ -1,0 +1,22 @@
+.video-background {
+  position: absolute; /* 絕對定位來實現疊加 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* 設置影片在內容的後面 */
+}
+
+.content {
+  position: relative; /* 保持相對定位，確保在背景影片上顯示 */
+  z-index: 1; /* 讓內容疊加在影片之上 */
+  color: black; /* 保證文字可見 */
+}
+
+.video-container {
+  position: relative; /* 相對定位，方便內部的背景影片定位 */
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* 防止溢出 */
+}

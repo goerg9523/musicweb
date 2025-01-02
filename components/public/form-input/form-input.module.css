@@ -1,0 +1,56 @@
+/* 父容器樣式，控制對齊 */
+.container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px;
+}
+
+/* 文字樣式，正常狀態 */
+.text {
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: center;
+  /* border-bottom: 1px solid black; 底部邊框 */
+  transition: background-color 0.3s; /* 過渡效果 */
+  cursor: pointer; /* 當滑鼠懸停在文字上，顯示指標 */
+  /* width: 210px; */
+  border-radius: 5px 5px 0px 0px;
+
+}
+
+
+/* 不同尺寸的文字寬度 */
+.textSmall {
+  width: 120px;
+}
+
+.textMedium {
+  width: 210px;
+}
+
+.textLarge {
+  width: 240px;
+}
+
+/* 當滑鼠懸停時 */
+.text:hover {
+  background-color: #000000; /* 改變背景色 */
+  color: var(--basecolor);
+  /* padding: 10px 20px; 擴大內邊距，模擬效果 */
+  border-top: 1px solid black; /* 添加頂部邊框 */
+  border-bottom: 1px solid black; /* 保持底部邊框 */
+  border-radius: 5px;
+  
+}
+
+/* 輸入框樣式 */
+.input {
+  font-size: 18px;
+  padding: 10px 20px; /* 內邊距與 hover 時相同 */
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none; /* 去掉輸入框的預設外框 */
+  text-align: center;
+}
+

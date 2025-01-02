@@ -1,0 +1,31 @@
+/* mp3-uploader.module.css */
+.container {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  margin-bottom: 100px;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.fileName {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #666;
+}
+
+.audioPlayer {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}

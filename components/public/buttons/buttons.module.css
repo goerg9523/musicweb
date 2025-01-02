@@ -1,0 +1,109 @@
+.btn {
+  all: unset;
+  align-items: center;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 9px 12px;
+  position: relative;
+}
+
+.btn .text-wrapper {
+  color: #000000;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.btn.btn-2-hover {
+  background-color: var(--basecolor);
+}
+
+.btn.btn-1-hover {
+  background-color: var(--basecolor);
+}
+
+.btn.btn-3-hover {
+  background-color: var(--basecolor);
+}
+
+.btn.btn-4-hover {
+  background-color: var(--basecolor);
+}
+
+.btn.btn-2-hover .text-wrapper {
+  font-family: var(--primary-200-font-family);
+  font-size: var(--primary-200-font-size);
+  font-style: var(--primary-200-font-style);
+  font-weight: var(--primary-200-font-weight);
+  letter-spacing: var(--primary-200-letter-spacing);
+  line-height: var(--primary-200-line-height);
+}
+
+.btn.btn-1-hover .text-wrapper {
+  font-family: var(--primary-100-font-family);
+  font-size: var(--primary-100-font-size);
+  font-style: var(--primary-100-font-style);
+  font-weight: var(--primary-100-font-weight);
+  letter-spacing: var(--primary-100-letter-spacing);
+  line-height: var(--primary-100-line-height);
+}
+
+.btn.btn-2 .text-wrapper {
+  font-family: var(--primary-200-font-family);
+  font-size: var(--primary-200-font-size);
+  font-style: var(--primary-200-font-style);
+  font-weight: var(--primary-200-font-weight);
+  letter-spacing: var(--primary-200-letter-spacing);
+  line-height: var(--primary-200-line-height);
+}
+
+.btn.btn-4 .text-wrapper {
+  font-family: var(--primary-300-font-family);
+  font-size: var(--primary-300-font-size);
+  font-style: var(--primary-300-font-style);
+  font-weight: var(--primary-300-font-weight);
+  letter-spacing: var(--primary-300-letter-spacing);
+  line-height: var(--primary-300-line-height);
+}
+
+.btn.btn-3-hover .text-wrapper {
+  font-family: var(--primary-p-font-family);
+  font-size: var(--primary-p-font-size);
+  font-style: var(--primary-p-font-style);
+  font-weight: var(--primary-p-font-weight);
+  letter-spacing: var(--primary-p-letter-spacing);
+  line-height: var(--primary-p-line-height);
+}
+
+.btn.btn-1 .text-wrapper {
+  font-family: var(--primary-100-font-family);
+  font-size: var(--primary-100-font-size);
+  font-style: var(--primary-100-font-style);
+  font-weight: var(--primary-100-font-weight);
+  letter-spacing: var(--primary-100-letter-spacing);
+  line-height: var(--primary-100-line-height);
+}
+
+.btn.btn-3 .text-wrapper {
+  font-family: var(--primary-p-font-family);
+  font-size: var(--primary-p-font-size);
+  font-style: var(--primary-p-font-style);
+  font-weight: var(--primary-p-font-weight);
+  letter-spacing: var(--primary-p-letter-spacing);
+  line-height: var(--primary-p-line-height);
+}
+
+.btn.btn-4-hover .text-wrapper {
+  font-family: var(--primary-300-font-family);
+  font-size: var(--primary-300-font-size);
+  font-style: var(--primary-300-font-style);
+  font-weight: var(--primary-300-font-weight);
+  letter-spacing: var(--primary-300-letter-spacing);
+  line-height: var(--primary-300-line-height);
+}

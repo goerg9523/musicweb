@@ -1,0 +1,33 @@
+/* .date-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 10px solid #ccc;
+  font-size: 16px;
+  width: 200px;
+  background-color: red;
+}
+
+.option {
+  font-size: 160px;
+  padding: 10px;
+} */
+/* form-option.module.css */
+.dropdown {
+  padding: 10px ;
+  border-radius: 5px ;
+  border: 1px solid #000000 ;
+  font-size: 16px ;
+  width: 120px ;
+  
+}
+
+
+.dropdown option {
+  padding: 10px;
+}
+
+.dropdown:hover {
+  background-color: black; 
+  color: var(--basecolor);
+}
+

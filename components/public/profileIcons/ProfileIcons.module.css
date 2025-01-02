@@ -1,0 +1,43 @@
+.profileIcons {
+  /* background-color: #ffe100; */
+  /* background-image: url('../public/header.jpg'); */
+  background-size: contain;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.profileIcons img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* 確保圖片顯示為圓形 */
+}
+
+
+.profileIcons.lg {
+  height: 140px;
+  width: 140px;
+  
+}
+
+.profileIcons.md {
+  height: 125px;
+  width: 125px;
+}
+
+.profileIcons.XS {
+  height: 48px;
+  width: 48px;
+}
+
+.profileIcons.XXS {
+  height: 30px;
+  width: 30px;
+}
+
+
+.profileIcons img{
+  object-fit: cover;
+  width: 100%;
+}

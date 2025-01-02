@@ -1,0 +1,48 @@
+.container {
+  padding: 1rem;
+}
+
+.masonryGrid {
+  display: flex;
+  width: auto;
+  margin-left: -1rem;
+}
+
+.masonryColumn {
+  padding-left: 1rem;
+  background-clip: padding-box;
+}
+
+.loadingText {
+  padding: 1rem;
+  text-align: center;
+}
+
+.errorText {
+  padding: 1rem;
+  text-align: center;
+  color: #ef4444;
+}
+
+.loadMoreContainer {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.loadMoreButton {
+  padding: 0.5rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.loadMoreButton:hover {
+  background-color: #2563eb;
+}
+
+.loadMoreButton:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}

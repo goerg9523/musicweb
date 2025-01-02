@@ -1,0 +1,51 @@
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: transparent;
+  width: 100%;
+}
+
+.small {
+  width: 120px;
+}
+
+.medium {
+  width: 200px;
+}
+
+.large {
+  width: 300px;
+}
+
+.input:hover {
+  background-color: #000000; /* 改變背景色 */
+  color: var(--basecolor);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  cursor: text;
+}
+
+.displayText:hover {
+  background-color: #000000;
+  color: var(--basecolor);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  cursor: text;
+}
+
+/* 錯誤訊息樣式 */
+.errorText {
+  color: red; /* 設置提示文字為紅色 */
+  font-size: 12px;
+  margin-top: 4px;
+}

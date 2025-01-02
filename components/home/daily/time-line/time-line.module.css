@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  max-width: 28rem; /* max-w-md */
+  margin-left: auto;
+  margin-right: auto; 
+  position: relative;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space-y-4 */
+}
+
+.compactBlock {
+  height: 4rem; /* h-16 */
+  padding: 1rem; /* p-4 */
+  border-radius: 0.5rem; /* rounded-lg */
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.compactBlock:hover {
+  background-color: rgb(249 250 251); /* hover:bg-gray-50 */
+}
+
+.compactBlockDisabled {
+  composes: compactBlock;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.compactDate {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  text-align: center;
+}
+
+.expandedBlock {
+  height: 12rem; /* h-48 */
+  background-color: rgb(60, 255, 0); /* bg-green-400 */
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.5rem; /* rounded-lg */
+  transition: all 300ms ease-in-out;
+}
+
+.expandedDate {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+  text-align: center;
+}
+
+.contentContainer {
+  margin-top: 1rem; /* mt-4 */
+  text-align: center;
+}
+
+.content {
+  font-weight: 500; /* font-medium */
+}
+
+.description {
+  margin-top: 0.5rem; /* mt-2 */
+  font-size: 0.875rem; /* text-sm */
+  color: rgb(55 65 81); /* text-gray-700 */
+}
+
+.detail{
+  /* position: absolute;
+  bottom: -20px; */
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #333;
+  padding: 5px;
+  border-radius: 4px;
+}
+.detail:hover{
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+.detail:hover a{
+  color: aliceblue;
+  display: block;
+}
+
+@media screen and (max-width: 375px){
+  .compactBlock{
+    font-size: 10px;
+    height: 50px;
+  }
+  .expandedBlock {
+    height: 140px;
+    font-size: 16px;
+  }
+}

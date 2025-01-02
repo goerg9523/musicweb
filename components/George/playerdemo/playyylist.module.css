@@ -1,0 +1,75 @@
+/* Playlist.module.css */
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.trackItem {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+  gap: 15px;
+}
+
+.playBtn {
+  font-size: 1.5rem;
+  color: #1db954; /* Spotify 綠色 */
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.playBtn:hover {
+  transform: scale(1.2);
+}
+
+.waveform {
+  flex: 1;
+  height: 20px;
+  background: repeating-linear-gradient(90deg, #555, #555 5px, #444 5px, #444 10px);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.trackInfo {
+  flex: 2;
+  color: #ccc;
+}
+
+.trackTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.trackTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.tag {
+  background-color: #333;
+  color: #ddd;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.trackDuration {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-left: 10px;
+}

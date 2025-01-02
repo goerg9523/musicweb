@@ -1,0 +1,208 @@
+/* favorites.module.css */
+.member-fav {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 120px);
+  width: 100%;
+  margin-top: 100px;
+
+  /* background: linear-gradient(180deg, #fff 65%, #84ff79 90%, #14ff00); */
+}
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.favNav {
+  flex: 2;
+}
+
+.favMain {
+  flex: 8;
+  /* background-color: #000; */
+  /* border: 1px solid #ddd; */
+  height: 80%;
+  /* padding: 50px; */
+
+  
+}
+
+.mainTitle {
+  width: 100%;
+  font-weight: bold ;
+  text-align: left; 
+  padding: 0 150px;
+  margin-bottom: 50px;
+}
+
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: space-around; */
+  margin: 0px 100px;
+  /* padding: 50px; */
+  max-height: 70%; /* 設置容器最大高度，視需求調整 */
+  /* overflow-y: scroll;  */
+  width: 70%;
+  /* border: #14ff00 2px solid;  */
+  border-radius: 10px;
+  
+
+}
+
+/* ------------------------------ */
+.favInfo {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 70px;
+  align-items: center;
+}
+
+.favInfo:hover {
+  cursor: pointer;
+  background-color: black;
+  color: var(--basecolor);
+  border-radius: 5px;
+  margin: 15px 70px;
+  box-shadow: 0 0 0 10px black;
+
+}
+
+.info1 {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.favIcon {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 样式内容 */
+}
+
+.photo {
+  width: 100%; /* 確保照片填滿容器 */
+  height: 100%;
+  object-fit: cover; /* 確保照片不變形 */
+}
+
+.favName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 20px 150px 20px 10px;
+
+}
+
+.RWD{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.favGenre{
+  width: 150px;
+}
+
+@media (max-width: 375px) {
+  .member-fav {
+    margin-top: 20px;
+    padding: 0 10px;
+    height: auto; /* 自適應高度 */
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .favNav {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .favMain {
+    width: 300px;
+    padding: 10px;
+    height: auto;
+  }
+
+  .mainTitle {
+    padding: 0 10px;
+    font-size: 1.5em; /* 調整字體大小 */
+    text-align: center; /* 居中對齊標題 */
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  .mainBody {
+    width: 300px;
+    margin: 0;
+    /* padding: 10px; */
+    max-height: none; /* 移除高度限制 */
+    overflow-y: visible; /* 取消滾動條 */
+  }
+
+  .favInfo {
+    width: 300px;
+    flex-direction: column; /* 改為垂直排列 */
+    margin: auto; /* 減少外邊距 */
+    padding: 20px;
+    align-items: center;
+    box-shadow: none; /* 移除框陰影 */
+    border-top: 1px solid var(--gray-2);
+  }
+
+  .favInfo:hover {
+    cursor: default;
+    background-color: inherit; /* 重置背景顏色 */
+    color: inherit; /* 重置文字顏色 */
+    margin: 15px 0; /* 重置外邊距 */
+    box-shadow: none; /* 移除陰影效果 */
+  }
+
+  
+  .favIcon {
+    margin-right: 10px;
+    margin-bottom: 10px; /* 添加下方間距 */
+    width: 50px; /* 調整圖標大小 */
+    height: 50px;
+  }
+
+  .favName {
+    padding: 10px 5px;
+    text-align: center; /* 居中對齊 */
+    font-size: 1em; /* 調整字體大小 */
+  }
+
+  .favGenre {
+    width: auto;
+    text-align: center;
+    font-size: 0.9em; /* 調整字體大小 */
+    margin-bottom: 10px; /* 添加上邊距 */
+  }
+
+  .RWD{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ 
+}

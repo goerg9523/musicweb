@@ -1,0 +1,230 @@
+.rightSection {
+    width: 33.333333%;
+    position: sticky;
+    top: 1rem;
+    height: fit-content;
+  }
+  
+  .summary {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background-color: white;
+  }
+  
+  .summaryTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+  }
+  
+  .itemList {
+    margin-bottom: 1.5rem;
+  }
+  
+  .summaryItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  
+  .summaryItem:last-child {
+    border-bottom: none;
+  }
+  
+  .itemInfo {
+    flex: 1;
+  }
+  
+  .productName {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+    color: #1a1a1a;
+  }
+  
+  .priceText {
+    font-size: 0.875rem;
+    color: #14FF00;
+    font-weight: 500;
+  }
+  
+  .summaryItemControls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .summaryQuantityControls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f9fafb;
+    padding: 0.25rem;
+    border-radius: 0.375rem;
+  }
+  
+  .summaryQuantityButton {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    color: #4b5563;
+    transition: all 0.2s ease;
+  }
+  
+  .summaryQuantityButton:hover {
+    background-color: #f3f4f6;
+    border-color: #d1d5db;
+  }
+  
+  .summaryQuantityButton:active {
+    background-color: #e5e7eb;
+  }
+  
+  .summaryQuantityButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .summaryQuantityText {
+    width: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #1a1a1a;
+  }
+  
+  .divider {
+    border-top: 1px solid #e5e7eb;
+    margin: 1rem 0;
+    padding-top: 1rem;
+  }
+  
+  .totalRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1a1a1a;
+  }
+  
+  .emptyText {
+    text-align: center;
+    padding: 2rem 0;
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .cartButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #fbbf24;
+    color: black;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .cartButton:hover {
+    background-color: #f59e0b;
+  }
+  
+  .cartButton:active {
+    background-color: #d97706;
+  }
+  
+  .cartButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #fbbf24;
+  }
+  
+  /* FAQ 相關樣式 */
+  .faqSection {
+    margin: 1rem 0;
+  }
+  
+  .faqToggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1a1a1a;
+    font-weight: 500;
+  }
+  
+  .faqList {
+    margin-top: 0.5rem;
+  }
+  
+  .faqItem {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .faqQuestion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #1a1a1a;
+    text-align: left;
+  }
+  
+  .faqQuestion:hover {
+    background-color: #f9fafb;
+  }
+  
+  .faqAnswer {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  /* 響應式設計 */
+  @media (max-width: 768px) {
+    .rightSection {
+      width: 100%;
+      position: relative;
+      top: 0;
+      margin-top: 1rem;
+    }
+  
+    .summaryItem {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .summaryItemControls {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }

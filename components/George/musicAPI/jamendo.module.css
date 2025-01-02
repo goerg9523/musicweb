@@ -1,0 +1,29 @@
+.trackItem{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  text-align: center;
+}
+.albumImage{
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.audioPlayer{
+  display: block;
+  margin: 8px auto;
+}
+.downloadLink{
+  display: block;
+  margin-top: 8px;
+  color: #3498db;
+  text-decoration: none;
+}
+.shareLink{
+  display: block;
+  margin-top: 8px;
+  color: #e74c3c;
+  text-decoration: none;
+}
